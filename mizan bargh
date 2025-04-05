@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace mizan_bargh
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            a = int.Parse(Console.ReadLine());
+            if(a<=5)
+            { b = 0; }
+            else if(a<=20)
+            { b = (a - 5) * 1000; }
+            else
+            { b = (20 - 5) * 1000 + (a - 20) * 5000; }
+            b = b + 1000;
+            Console.WriteLine(b);
+               
+            Console.ReadLine();
+        }
+    }
+}
