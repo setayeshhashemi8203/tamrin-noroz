@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace jaygah
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, n;
+            n = int.Parse(Console.ReadLine());
+            a = 0;
+            if (n < 10)
+                a = n;
+            else if (n < 100)
+                a = n / 10;
+            else if (n < 1000)
+                a = n / 100;
+            else if (n < 10000)
+                a = n / 1000;
+            else if (n < 100000)
+                a = n / 10000;
+            Console.WriteLine(a);
+            Console.ReadLine();
+             
+
+        }
+    }
+}
